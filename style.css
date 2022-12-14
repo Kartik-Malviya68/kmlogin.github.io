@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.left-side{
+    height: 100vh;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-weight: 500;
+}
+h4{
+    font-weight:400 ;
+    color: #727884;
+    font-size: 0.8rem;
+    margin: 1.1rem 0;
+}
+.email{
+    font-weight:500;
+    color: rgb(0, 0, 0);
+    font-size: 0.8rem;
+    margin: 1.1rem 0;
+}
+.password, #remember, #forget-password{
+    font-weight:500;
+    color: rgb(0, 0, 0);
+    font-size: 0.8rem;
+    margin: 1.1rem 0;
+    text-decoration: none;
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+}
+.sign{
+    background-color:#7f56da;
+    border: none;
+    color: white;
+    font-weight: 500;
+    height: 2.5rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+.sign:hover{
+    background-color:#593c99;
+}
+.sign-google{
+    display: flex;
+    border: none;
+    color: white;
+    font-weight: 500;
+    height: 2.5rem;
+    border-radius: 0.4rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    font-weight:500;
+    color: rgb(0, 0, 0);
+    font-size: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0rem;
+    cursor: pointer;
+}
+#google-logo{
+    width: 1.5rem;
+    margin-right: 1rem;
+}
+.signin{
+    color: #727884;
+    font-weight:500;
+    font-size: 0.8rem;
+    margin: 0rem 0rem;
+    cursor: pointer;
+}
+.signin a, .cheq a{
+    color: #7f56da;
+    font-weight: 600;
+}
+.grup{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+form{
+    width:50%;
+}
+
+input[type=email], input[type=password]{
+    width: 100%;
+    height: 2.5rem;
+    outline: #727884;
+    padding:  0 0.7rem;
+    margin: 0.7rem 0 ;
+    font-size: 0.9rem;
+    border: 1.5px solid #e9ebed ;
+    border-radius: 0.4rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+input[type=checkbox]{
+    margin-right: 0.4rem;
+}
+.cheq{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signin{
+    display: flex;
+    justify-content: center;
+}
+.signin a{
+    margin-left: 0.4rem;
+}
+.right-side{
+    width: 50%;
+    height: 100vh;
+    background-color: #f3f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h5{
+    position: relative;
+    top: 10%;
+}
+.circle{
+    display: flex;
+}
+.element{
+    border-radius: 100%;
+    width: 12rem;
+    height: 12rem;
+    background-color: #7f56da;
+}
+.glass{
+    position: absolute;
+    backdrop-filter: blur(10px);
+    width: 50%;
+    height: 50%;
+    align-self: flex-end;
+}
+@media screen and (max-width:1024px)  {
+    .container{
+        flex-direction: column;
+    }
+    .right-side, .left-side{
+        width: 100%;
+    }
+    .glass{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:555px)  {
+    form{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+}
